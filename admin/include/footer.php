@@ -1,0 +1,80 @@
+<footer class="footer pt-5">
+
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-12">
+            <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+            <li class="nav-item">
+                <a href="#" class="nav-link pe-0 text-muted" target="_blank">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link pe-0 text-muted" target="_blank">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </main>
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="assets/ckeditor/ckeditor.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+ 
+ 
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+  
+  <script>
+    <?php
+
+     if(isset($_SESSION['message']))
+     {
+      ?>
+          alertify.set('notifier','position', 'top-right');
+          alertify.success('<?=$_SESSION['message']?>  ');
+      <?php
+   }
+   unset($_SESSION['message']);
+  ?>
+  </script>
+    
+
+ <script>
+  ClassicEditor
+      .create( document.querySelector( '#editor' ) )
+      .then( editor => {
+              console.log( editor );
+      } )
+      .catch( error => {
+              console.error( error );
+      } );
+
+      ClassicEditor
+    .create( document.querySelector( '#tips' ) )
+    .then( editor => {
+            console.log( editor );
+    } )
+    .catch( error => {
+            console.error( error );
+    } );
+    ClassicEditor
+    .create( document.querySelector( '#description' ) )
+    .then( editor => {
+            console.log( editor );
+    } )
+    .catch( error => {
+            console.error( error );
+    } );s    
+ </script> 
+ <!-- <script>
+    CKEDITOR.replace( 'editor' );
+    CKEDITOR.replace( 'tips' );
+    CKEDITOR.replace( 'description' );
+</script> -->
+  </body>
+
+</html>
