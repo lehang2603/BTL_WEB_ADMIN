@@ -70,7 +70,7 @@ include('../middleware/adminMiddleware.php');
                             
                             <div class="col-md-12">
                                 <label class="mb-0">Description</label>
-                                <textarea rows="3"require name="description" id="description" placeholder="Enter description" class="form-control  mb-2 ckeditor"></textarea>
+                                <textarea rows="10"require name="description" id="description" placeholder="Enter description" class="form-control  mb-2 ckeditor"></textarea>
                             </div>
                             <div class="col-md-12">
                                 <label class="mb-0">Introduce</label>

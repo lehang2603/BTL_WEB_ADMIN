@@ -41,40 +41,6 @@
    unset($_SESSION['message']);
   ?>
   </script>
-    
-
- <script>
-  ClassicEditor
-      .create( document.querySelector( '#editor' ) )
-      .then( editor => {
-              console.log( editor );
-      } )
-      .catch( error => {
-              console.error( error );
-      } );
-
-      ClassicEditor
-    .create( document.querySelector( '#tips' ) )
-    .then( editor => {
-            console.log( editor );
-    } )
-    .catch( error => {
-            console.error( error );
-    } );
-    ClassicEditor
-    .create( document.querySelector( '#description' ) )
-    .then( editor => {
-            console.log( editor );
-    } )
-    .catch( error => {
-            console.error( error );
-    } );s    
- </script> 
- <!-- <script>
-    CKEDITOR.replace( 'editor' );
-    CKEDITOR.replace( 'tips' );
-    CKEDITOR.replace( 'description' );
-</script> -->
   </body>
 
 </html>

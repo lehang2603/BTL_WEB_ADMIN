@@ -110,7 +110,7 @@ include('../middleware/adminMiddleware.php');
                                         
                                         <div class="col-md-12">
                                             <label class="mb-0">Description</label>
-                                            <textarea rows="3" require name="description" id="description"  placeholder="Enter description" class="form-control mb-2"><?= $data['description'] ?></textarea>
+                                            <textarea rows="3" require name="description" id="description"  placeholder="Enter description" class="form-control mb-2 ckeditor"><?= $data['description'] ?></textarea>
                                         </div>
                                         <div class="col-md-12">
                                             <label class="mb-0">Introduce</label>
@@ -120,7 +120,7 @@ include('../middleware/adminMiddleware.php');
                                         
                                         <div class="col-md-12">
                                             <label class="mb-0">Tips</label>
-                                            <textarea rows="3" require name="tips"  id="tips"   placeholder="Enter Tips" class="form-control  mb-2"><?= $data['tips'] ?></textarea>
+                                            <textarea rows="3" require name="tips"  id="tips"   placeholder="Enter Tips" class="form-control  mb-2 ckeditor"><?= $data['tips'] ?></textarea>
                                         </div>
                                         <div class="col-md-12">
                                                 <label class="mb-0">Show home</label>

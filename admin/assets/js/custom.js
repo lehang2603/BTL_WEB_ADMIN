@@ -85,10 +85,42 @@ $(document).ready(function(){
           
     });
 
-	ClassicEditor
-		.create( document.querySelector( '#editor' ) )
-		.catch( error => {
-			console.error( error );
-		} );
+    ClassicEditor
+        .create(document.querySelector('#editor'), {
+            ckfinder: {
+                uploadUrl: '/btl_web_admin/upload.php',
+            }
+        })
+        .then( editor => {
+                console.log( editor );
+        } )
+        .catch( error => {
+                console.error( error );
+        } );
+  
+    ClassicEditor
+      .create(document.querySelector('#tips'), {
+        ckfinder: {
+            uploadUrl: '/btl_web_admin/upload.php',
+        }
+    })
+      .then( editor => {
+              console.log( editor );
+      } )
+      .catch( error => {
+              console.error( error );
+      } );
+      ClassicEditor
+      .create(document.querySelector('#description'), {
+            ckfinder: {
+                uploadUrl: '/btl_web_admin/upload.php',
+            }
+        })
+      .then( editor => {
+              console.log( editor );
+      } )
+      .catch( error => {
+              console.error( error );
+      } );
 
 });
